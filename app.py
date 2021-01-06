@@ -20,7 +20,7 @@ def replace(word):
             definition2 = data.get(word2)
             num = 1 - SequenceMatcher(None, word, word2).ratio()
             num = num * 100
-            print(f'Definition: {definition2}.\nYour word was {num:0.2f}% away from the actual word.')
+            print(f'Definition: {definition2}.\nYour word was {num:0.2f}% away from the real word.')
             break
             
         elif ans.lower() == "no" or ans.lower() == "n":
